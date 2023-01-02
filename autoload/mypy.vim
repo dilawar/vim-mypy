@@ -11,5 +11,5 @@
 
 function mypy#ExecuteMyPy()
   silent !clear
-  execute "!mypy --ignore-missing-imports --follow-imports=skip " . bufname("%")
+  execute "!mypy --ignore-missing-imports --install-types --follow-imports=skip " . bufname("%")
 endfunction
